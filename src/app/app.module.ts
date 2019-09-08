@@ -5,6 +5,8 @@ import { AppComponent } from "./app.component";
 import { RouterModule } from "@angular/router";
 import { appRoutes } from "./app.routes";
 
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+
 import { HeaderComponent } from "./shared-components/header/header.component";
 import { FooterComponent } from "./shared-components/footer/footer.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
@@ -16,7 +18,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
     FooterComponent,
     DashboardComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, NgbModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent]
 })

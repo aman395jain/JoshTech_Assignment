@@ -1,4 +1,23 @@
 .header {
-    min-height: 60px;
-    background-color: antiquewhite;
+  min-height: 60px;
+  background-color: antiquewhite;
+  .nav-link {
+    font-size: 12px !important;
+  }
+  .logo1 {
+    background: url("./../../assets/img/Untitled-1_03.png") no-repeat center
+      center;
+    height: 100px;
+  }
+  .logo2 {
+    background: url("./../../assets/img/Untitled-2_03.png") no-repeat center
+      center;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .nav-link {
+    padding: 5px 2px !important;
+    font-size: 12px !important;
+  }
 }
